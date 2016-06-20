@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@mipmap/ic_map_black_48dp"
+            android:title="Map" />
+        <item
+            android:id="@+id/nav_myposts"
+            android:icon="@mipmap/ic_place_black_48dp"
+            android:title="My Posts" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@mipmap/ic_settings_black_48dp"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@mipmap/ic_exit_to_app_black_48dp"
+            android:title="Logout" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

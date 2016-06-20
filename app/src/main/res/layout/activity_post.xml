@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+    <EditText
+
+        android:id="@+id/post_edittext"
+        android:cursorVisible="true"
+        android:maxLength="140"
+        android:textCursorDrawable="@null"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/character_count_textview"
+        android:background="#FFFFFF"
+        android:textColor="@color/black_semi_transparent"
+        android:hint="@string/prompt_post"
+        android:inputType="textMultiLine"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:gravity="top" >
+        <requestFocus />
+    </EditText>
+
+	<TextView
+        android:id="@+id/character_count_textview"
+        android:layout_gravity="bottom|end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/character_count_placeholder"
+        android:layout_marginRight="10dip"
+        android:layout_marginBottom="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+        <GridView
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/grid"
+            android:background="#D6D7D7"
+            android:layout_gravity="bottom"
+
+            android:numColumns="6"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn"
+            android:background="@android:color/transparent"
+
+            android:layout_marginLeft="10dip"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="bottom|left" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/post"
+            android:layout_gravity="bottom|center"
+            app:backgroundTint="@color/colorPrimary"
+            style="@style/FabStylePost"
+            android:layout_margin="@dimen/fab_margin"/>
+
+</android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
